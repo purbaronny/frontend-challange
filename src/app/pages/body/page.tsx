@@ -1,6 +1,7 @@
 "use client"
 
 import BodyHome from "./home/page"
+import BodyService from "./service/page"
 import BodyWork from "./work/page"
 
 export default function Body() {
@@ -19,10 +20,11 @@ export default function Body() {
         </div> */}
         <BodyWork></BodyWork>
   
-        <div id="service" className="py-8">
+        {/* <div id="service" className="py-8">
           <h2 className="text-xl font-semibold">Service</h2>
           <p>Check out our services.</p>
-        </div>
+        </div> */}
+        <BodyService></BodyService>
   
         <div id="our_customer" className="py-8">
           <h2 className="text-xl font-semibold">Our Customer</h2>
