@@ -44,21 +44,19 @@ export default function BodyTeam() {
                     {getVisibleMembers().map((member, index) => (
                         <div
                             key={member.name} // Gunakan key unik berdasarkan nama
-                            className={`flex flex-col items-center transition-all duration-300 ${
-                                index === 1 ? "scale-110" : "scale-90 opacity-60"
-                            }`}
+                            className={`flex flex-col items-center transition-all duration-300 ${index === 1 ? "scale-110" : "scale-90 opacity-60"
+                                }`}
                         >
                             <div
-                                className={`flex justify-center items-center rounded-full bg-gray-100 ${
-                                    index === 1 ? "w-[258px] h-[258px]" : "w-[200px] h-[200px]"
-                                }`}
+                                className={`flex justify-center items-center rounded-full bg-gray-100 ${index === 1 ? "w-[258px] h-[258px]" : "w-[200px] h-[200px]"
+                                    }`}
                             >
                                 <img
                                     src={member.img}
                                     alt={member.name}
-                                    className={`rounded-full ${
-                                        index === 1 ? "w-[200px] h-[200px]" : "w-[160px] h-[160px]"
-                                    }`}
+                                    className={`rounded-full ${index === 1 ? "w-[258px] h-[258px]" : "w-[200px] h-[200px]"
+                                        }`}
+                                />
                                 />
                             </div>
                             <label className="mt-3 text-xl font-semibold text-[#414141]">{member.name}</label>
@@ -79,9 +77,8 @@ export default function BodyTeam() {
                     <button
                         key={index}
                         onClick={() => setCurrentIndex(index)}
-                        className={`w-3 h-3 rounded-full transition-colors ${
-                            index === currentIndex ? "bg-[#414141]" : "bg-gray-300"
-                        }`}
+                        className={`w-3 h-3 rounded-full transition-colors ${index === currentIndex ? "bg-[#414141]" : "bg-gray-300"
+                            }`}
                     />
                 ))}
             </div>
