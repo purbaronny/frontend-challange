@@ -1,6 +1,7 @@
 "use client"
 
 import BodyCareer from "./career/page"
+import BodyContact from "./contact/page"
 import BodyOurCustomer from "./customer/page"
 import BodyHome from "./home/page"
 import BodyService from "./service/page"
@@ -47,10 +48,11 @@ export default function Body() {
         </div> */}
         <BodyCareer></BodyCareer>
   
-        <div id="contact" className="py-8">
+        {/* <div id="contact" className="py-8">
           <h2 className="text-xl font-semibold">Contact</h2>
           <p>Get in touch with us.</p>
-        </div>
+        </div> */}
+        <BodyContact></BodyContact>
       </div>
     );
   }
