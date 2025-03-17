@@ -12,7 +12,7 @@ export default function BodyOurCustomer() {
     ];
 
     return (
-        <div id="our_customer" className="container mx-auto px-4 grid grid-cols-12 gap-8">
+        <div id="our_customer" className="container mx-auto px-4 grid grid-cols-12 gap-8 mt-20">
             {/* Bagian Kiri (6 kolom dari 12, dengan margin kanan 1 kolom) */}
             <div id="customerLeftId" className="col-span-12 md:col-span-5 md:mr-1 grid grid-cols-12">
                 <div className="col-span-12 md:col-span-9 md:col-start-4 flex flex-col justify-center">
