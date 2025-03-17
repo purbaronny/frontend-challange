@@ -19,7 +19,7 @@ export default function Header() {
         
         {/* Logo */}
         <div className="flex items-center">
-          <img src="/assets/img/logo-twiscode.png" alt="Company Logo" className="h-10" />
+        <img src="/assets/img/logo-twiscode.png" alt="Company Logo" className="h-[60px]" />
         </div>
 
         {/* Desktop Navigation & Search */}
