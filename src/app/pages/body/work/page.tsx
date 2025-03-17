@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ArrowRight } from "lucide-react";
 
 interface BoxData {
     id: number;
@@ -27,9 +28,9 @@ export default function BodyWork() {
     };
 
     return (
-        <div id="work" className="flex flex-col md:flex-row justify-center md:items-center w-full h-auto md:h-screen">
+        <div id="work" className="grid grid-cols-1 md:grid-cols-12 items-center justify-between h-auto md:h-screen gap-6 md:gap-0">
             {/* Left Side (Kotak-kotak) */}
-            <div id="divBodyWorkLeftId" className="w-full md:w-1/2 flex justify-center items-center p-6 order-1">
+            <div id="divBodyWorkLeftId" className="col-span-12 md:col-span-6 flex justify-center items-center p-6 order-1">
                 <div className="grid gap-0">
                     {Array(Math.ceil(boxes.length / 2))
                         .fill(null)
@@ -68,19 +69,13 @@ export default function BodyWork() {
             </div>
 
             {/* Right Side (Teks) dengan Grid 12 Kolom */}
-            <div id="divBodyWorkRightId" className="w-full md:w-1/2 grid grid-cols-12 p-6 order-2 self-center">
-                {/* Kolom pertama kosong */}
-                <div className="col-span-1"></div>
-
-                {/* Konten di kolom 2-12 */}
-                <div className="col-span-11 flex flex-col items-center md:items-start text-center md:text-left">
-                    <h2 className="text-[64px] font-semibold font-poppins leading-[72px]">How</h2>
-                    <h2 className="text-[64px] font-semibold font-poppins leading-[72px]">We Work?</h2>
-                    <p className="text-[24px] font-medium font-poppins leading-[32px] mt-10">{selectedText}</p>
-                    <button className="mt-10 w-[170px] h-[60px] bg-[#4A4A4A] text-white text-[18px] font-medium font-poppins leading-[32px] transition-colors duration-300 hover:bg-white hover:text-[#9F9F9F] border border-[#4A4A4A]">
-                        More
-                    </button>
-                </div>
+            <div id="divBodyWorkRightId" className="col-span-12 md:col-span-6 md:pl-16 p-6 order-2 self-center">
+                <h2 className="text-[64px] font-semibold font-poppins leading-[72px]">How</h2>
+                <h2 className="text-[64px] font-semibold font-poppins leading-[72px]">We Work?</h2>
+                <p className="text-[24px] font-medium font-poppins leading-[32px] mt-10">{selectedText}</p>
+                <button className="mt-10 w-[170px] h-[60px] bg-[#4A4A4A] text-white text-[18px] font-medium font-poppins leading-[32px] transition-colors duration-300 hover:bg-white hover:text-[#9F9F9F] border border-[#4A4A4A]">
+                    More
+                </button>
             </div>
         </div>
     );
