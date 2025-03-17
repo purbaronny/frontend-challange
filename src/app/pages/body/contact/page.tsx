@@ -28,8 +28,9 @@ export default function BodyContact() {
             {/* Company Section */}
             <div id="contactCompanyId" className="col-span-12 md:col-span-2 flex flex-col">
                 <h2 className="text-[#414141] text-2xl font-semibold leading-[72px] text-center">Company</h2>
-                <div id="contacCompanyList" className="text-left">
+                <div id="contacCompanyList" className="text-left mt-4">
                     <ul className="list-inside text-[#9F9F9F] text-sm md:text-base">
+                        <li><a href="#home">- Home</a></li>
                         <li><a href="#work">- Work</a></li>
                         <li><a href="#service">- Service</a></li>
                         <li><a href="#team">- Team</a></li>
@@ -45,7 +46,7 @@ export default function BodyContact() {
             {/* Contact Us Section */}
             <div id="contactUsId" className="col-span-12 md:col-span-2 flex flex-col">
                 <h2 className="text-[#414141] text-2xl font-semibold leading-[72px] text-center">Contact Us</h2>
-                <ul className="text-[#9F9F9F] text-sm leading-[45px] mt-4 text-left">
+                <ul className="text-[#9F9F9F] text-sm leading-[45px] mt-2 text-left">
                     <li className="flex items-center gap-2">
                         <img src="/assets/img/facebook.png" className="w-5 h-5" /> Facebook
                     </li>
