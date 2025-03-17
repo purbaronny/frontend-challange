@@ -4,7 +4,7 @@ export default function BodyHome() {
     return (
         <div id="home" className="grid grid-cols-1 md:grid-cols-12 items-center justify-between h-auto md:h-screen gap-6 md:gap-0">
             {/* Left Side (Text) */}
-            <div className="col-span-12 md:col-span-5 md:col-start-2 px-6 md:px-0 mb-6 md:mb-0 order-1 md:order-1">
+            <div className="col-span-12 md:col-span-5 md:col-start-2 md:pl-16 px-6 md:px-0 mb-6 md:mb-0 order-1 md:order-1">
                 {/* Upper Left */}
                 <div className="mb-6 text-center md:text-left">
                     <h1 className="text-[40px] md:text-[64px] leading-[48px] md:leading-[72px] tracking-[0%] font-semibold font-poppins">
