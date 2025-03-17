@@ -54,9 +54,9 @@ export default function BodyService() {
     };
 
     return (
-        <div id="service" className="w-full flex flex-col md:flex-row h-screen">
+        <div id="service" className="w-full flex flex-col md:flex-row min-h-screen">
             {/* Left Section */}
-            <div className="relative w-full md:w-1/2 h-[381px] grid grid-cols-12">
+            <div className="relative w-full md:w-1/2 min-h-[381px] grid grid-cols-12">
                 <div
                     className="col-span-11 grid grid-cols-12 bg-cover bg-center mx-auto"
                     style={{ backgroundImage: "url(/assets/img/body-service-image.png)" }}
@@ -65,9 +65,9 @@ export default function BodyService() {
                     <div className="col-span-11 flex flex-col justify-between p-8 text-right">
                         {/* Title */}
                         <div className="grid grid-cols-12">
-                            <div className="col-span-4"></div>
-                            <div className="col-span-7">
-                                <h2 className="text-white font-poppins font-semibold text-[48px] leading-[60px]">
+                            <div className="col-span-2"></div>
+                            <div className="col-span-9">
+                                <h2 className="text-white font-poppins font-semibold text-[72px] leading-[60px]">
                                     {selectedServiceDetail?.title}
                                 </h2>
                             </div>
@@ -76,9 +76,9 @@ export default function BodyService() {
 
                         {/* Detail */}
                         <div className="grid grid-cols-12">
-                            <div className="col-span-4"></div>
-                            <div className="col-span-7">
-                                <p className="text-white font-poppins text-[12px] leading-[24px]">
+                            <div className="col-span-2"></div>
+                            <div className="col-span-9">
+                                <p className="text-white font-poppins text-[18px] leading-[24px]">
                                     {selectedServiceDetail?.description}
                                 </p>
                             </div>
@@ -110,7 +110,7 @@ export default function BodyService() {
             </div>
 
             {/* Right Section */}
-            <div className="relative w-full md:w-1/2 h-[381px] grid grid-cols-12">
+            <div className="relative w-full md:w-1/2 min-h-[381px] grid grid-cols-12">
                 <div className="col-span-1"></div> {/* Empty Column */}
                 <div className="col-span-7 flex flex-col justify-center text-left">
                     {/* Title */}
@@ -126,9 +126,7 @@ export default function BodyService() {
                         {serviceDetails.map((service) => (
                             <p
                                 key={service.code}
-                                className={`cursor-pointer text-[24px] leading-[60px] font-poppins ${
-                                    selectedService === service.code ? "text-[#414141] font-bold" : "text-[#9F9F9F] hover:text-[#414141]"
-                                }`}
+                                className={`cursor-pointer text-[24px] leading-[60px] font-poppins ${selectedService === service.code ? "text-[#414141] font-bold" : "text-[#9F9F9F] hover:text-[#414141]"}`}
                                 onClick={() => setSelectedService(service.code)}
                             >
                                 - {service.title}
