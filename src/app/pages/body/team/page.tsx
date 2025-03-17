@@ -36,7 +36,7 @@ export default function BodyTeam() {
             <div className="flex items-center justify-center mt-8">
                 {/* Tombol Prev */}
                 <button onClick={prevSlide} className="p-2 text-gray-500 hover:text-black">
-                    <ChevronLeft size={36} />
+                    {/* <ChevronLeft size={36} /> */}
                 </button>
 
                 {/* Daftar Gambar (Linked List Circular) */}
@@ -57,7 +57,6 @@ export default function BodyTeam() {
                                     className={`rounded-full ${index === 1 ? "w-[258px] h-[258px]" : "w-[200px] h-[200px]"
                                         }`}
                                 />
-                                />
                             </div>
                             <label className="mt-3 text-xl font-semibold text-[#414141]">{member.name}</label>
                             <label className="text-md font-medium text-gray-500">{member.role}</label>
@@ -67,7 +66,7 @@ export default function BodyTeam() {
 
                 {/* Tombol Next */}
                 <button onClick={nextSlide} className="p-2 text-gray-500 hover:text-black">
-                    <ChevronRight size={36} />
+                    {/* <ChevronRight size={36} /> */}
                 </button>
             </div>
 
