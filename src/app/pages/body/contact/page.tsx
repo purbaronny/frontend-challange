@@ -26,7 +26,7 @@ export default function BodyContact() {
                     ) : (
                         <iframe
                             title="Google Maps - PT. Dapur Rumah Sejahtera"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.004345593481!2d112.7115502!3d-7.2793774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fc088fcf92f1%3A0xf6bf8b906b7e02b2!2sPt%20Dapur%20Rumah%20Sejahtera!5e0!3m2!1sen!2sid!4v1710432912345"
+                            src={mapLocation}
                             width="360"
                             height="148"
                             style={{ border: 0 }}
