@@ -1,3 +1,5 @@
+"use client"
+
 import useTeamMembers from "@/app/hooks/useTeamMembers";
 import { useState } from "react";
 
