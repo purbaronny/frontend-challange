@@ -44,7 +44,7 @@ export default function Header() {
                   placeholder="Search"
                   className="outline-none px-2 w-32 font-poppins font-medium text-[14px] leading-[16px]"
                 />
-                <button type="submit" className="text-gray-600 font-poppins font-medium text-[14px] leading-[16px]">
+                <button type="submit" className="text-gray-600">
                   <Search />
                 </button>
                 <button
@@ -53,13 +53,13 @@ export default function Header() {
                     setSearchOpen(false);
                     setSearchQuery("");
                   }}
-                  className="text-gray-600 font-poppins font-medium text-[14px] leading-[16px]"
+                  className="text-gray-600"
                 >
                   <X />
                 </button>
               </form>
             ) : (
-              <button onClick={() => setSearchOpen(true)} className="text-gray-600 font-poppins font-medium text-[14px] leading-[16px]">
+              <button onClick={() => setSearchOpen(true)} className="text-gray-600">
                 <Search />
               </button>
             )}
@@ -87,13 +87,44 @@ export default function Header() {
 
         {/* Mobile View: Search & Hamburger Menu */}
         <div className="md:hidden flex items-center space-x-4">
+          <button onClick={() => setSearchOpen(!searchOpen)} className="text-gray-600">
+            <Search />
+          </button>
           <MenuIcon className="text-gray-600 cursor-pointer" onClick={() => setIsOpen(!isOpen)} />
         </div>
       </div>
 
       {/* Mobile Menu Dropdown */}
-      {isOpen && (
+      {(isOpen || searchOpen) && (
         <div className="md:hidden bg-white p-4 mt-2 shadow-lg rounded-lg">
+          {/* Search Input di Mobile */}
+          {searchOpen && (
+            <form onSubmit={handleSearchSubmit} className="flex items-center space-x-2 border border-gray-300 rounded-lg px-2 py-1 mb-4">
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                autoFocus
+                placeholder="Search"
+                className="outline-none px-2 w-full font-poppins font-medium text-[14px] leading-[16px]"
+              />
+              <button type="submit" className="text-gray-600">
+                <Search />
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setSearchOpen(false);
+                  setSearchQuery("");
+                }}
+                className="text-gray-600"
+              >
+                <X />
+              </button>
+            </form>
+          )}
+
+          {/* Menu Navigasi */}
           <nav className="flex flex-col space-y-2">
             {menus
               .filter((menu) => menu.visible)
