@@ -9,7 +9,8 @@ export default function BodyTeam() {
     const [currentIndex, setCurrentIndex] = useState(0); // Fokus awal di index 0
 
     if (loading) return <p className="text-center text-gray-500">Loading team members...</p>;
-    if (error) return <p className="text-center text-red-500">Error: {error}</p>;
+    if (error) return <p className="text-center text-red-700 font-semibold">Error: {error}</p>;
+
 
     const prevSlide = () => {
         setCurrentIndex((prev) => (prev === 0 ? teamMembers.length - 1 : prev - 1));

@@ -28,7 +28,8 @@ export default function Body() {
     }), []);
 
     if (loading) return <p className="text-center text-gray-500">Loading menu...</p>;
-    if (error) return <p className="text-center text-red-500">Error: {error}</p>;
+    if (error) return <p className="text-center text-red-700 font-semibold">Error: {error}</p>;
+
 
     return (
         <div className="bg-white shadow-md">
