@@ -14,7 +14,7 @@ export default function BodyWork() {
             setActiveBox(validBoxes[0].id!);
             setSelectedText(validBoxes[0].detail!);
         }
-    }, [boxes]);
+    }, [boxes, validBoxes, activeBox]);
 
     const handleBoxClick = (id: number | null, detail?: string) => {
         if (id !== null) {

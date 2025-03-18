@@ -1,7 +1,8 @@
+"use client"
+
 import { useState, useEffect } from "react";
 import { getImages } from "../lib/profile";
 
-// Define the type for images
 type ImageItem = {
     id: number;
     url: string;

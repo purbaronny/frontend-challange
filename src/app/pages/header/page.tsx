@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import useMenus from "@/app/hooks/useMenus";
 import { Menu as MenuIcon, Search, X } from "lucide-react";
 import { useState } from "react";
@@ -20,7 +21,13 @@ export default function Header() {
       <div className="container mx-auto flex items-center justify-between px-4 md:px-8 lg:px-12">
         {/* Logo */}
         <div className="flex items-center">
-          <img src="/assets/img/logo-twiscode.png" alt="Company Logo" className="h-[60px]" />
+          <Image
+            src="/assets/img/logo-twiscode.png"
+            alt="Company Logo"
+            width={120}
+            height={60}
+            priority
+          />
         </div>
 
         {/* Desktop Navigation & Search */}
@@ -62,7 +69,8 @@ export default function Header() {
           <nav className="flex items-center space-x-6">
             {loading && <span>Loading...</span>}
             {error && <span className="text-red-500">{error}</span>}
-            {!loading && !error &&
+            {!loading &&
+              !error &&
               menus
                 .filter((menu) => menu.visible)
                 .map((menu) => (

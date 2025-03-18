@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function BodyHome() {
     return (
@@ -30,8 +31,14 @@ export default function BodyHome() {
             </div>
 
             {/* Right Side (Image) */}
-            <div className="col-span-12 md:col-span-6 h-auto md:h-full order-2 md:order-2 w-full">
-                <img src="/assets/img/home.png" alt="Home Image" className="w-full h-auto md:h-full object-cover block" />
+            <div className="col-span-12 md:col-span-6 h-auto md:h-full order-2 md:order-2 w-full relative">
+                <Image
+                    src="/assets/img/home.png"
+                    alt="Home Image"
+                    layout="fill"
+                    objectFit="cover"
+                    className="block"
+                />
             </div>
         </div>
     );

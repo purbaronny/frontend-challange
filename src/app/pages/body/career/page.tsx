@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function BodyCareer() {
     return (
         <div id="career" className="grid grid-cols-12 mt-20">
@@ -19,11 +21,16 @@ export default function BodyCareer() {
                             <h2 className="text-white text-3xl md:text-4xl font-semibold leading-tight lg:leading-[72px]">
                                 Join Our Team
                             </h2>
-                            <img 
-                                src="/assets/img/career-img.png" 
-                                alt="Career"
-                                className="mt-6 mx-auto lg:mx-0 w-[80%] md:w-[400px] h-auto"
-                            />
+                            <div className="relative mt-6 mx-auto lg:mx-0 w-[80%] md:w-[400px] h-auto">
+                                <Image 
+                                    src="/assets/img/career-img.png"
+                                    alt="Career"
+                                    width={400} 
+                                    height={300} 
+                                    className="w-full h-auto"
+                                    priority
+                                />
+                            </div>
                         </div>
 
                         {/* Right Section */}

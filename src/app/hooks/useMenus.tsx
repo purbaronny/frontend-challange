@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { getMenus } from "@/app/lib/profile";
 
-interface Menu {
+export interface Menu {
   id: number;
   title: string;
   href: string;

@@ -2,6 +2,7 @@
 
 import useTeamMembers from "@/app/hooks/useTeamMembers";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function BodyTeam() {
     const { teamMembers, loading, error } = useTeamMembers();
@@ -49,16 +50,16 @@ export default function BodyTeam() {
                             }`}
                         >
                             <div
-                                className={`flex justify-center items-center rounded-full bg-gray-100 ${
+                                className={`relative flex justify-center items-center rounded-full bg-gray-100 overflow-hidden ${
                                     index === 1 ? "w-[258px] h-[258px]" : "w-[200px] h-[200px]"
                                 }`}
                             >
-                                <img
+                                <Image
                                     src={member.img}
                                     alt={member.name}
-                                    className={`rounded-full ${
-                                        index === 1 ? "w-[258px] h-[258px]" : "w-[200px] h-[200px]"
-                                    }`}
+                                    width={index === 1 ? 258 : 200}
+                                    height={index === 1 ? 258 : 200}
+                                    className="rounded-full"
                                 />
                             </div>
                             <label className="mt-3 text-xl font-semibold text-[#414141]">{member.name}</label>
