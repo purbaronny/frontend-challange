@@ -6,6 +6,7 @@ import BodyOurCustomer from "./customer/page"
 import BodyHome from "./home/page"
 import BodyService from "./service/page"
 import BodyTeam from "./team/page"
+import BodyTestimonial from "./testimonial/page"
 import BodyWork from "./work/page"
 
 export default function Body() {
@@ -35,6 +36,8 @@ export default function Body() {
           <p>Meet our valued customers.</p>
         </div> */}
         <BodyOurCustomer></BodyOurCustomer>
+
+        <BodyTestimonial></BodyTestimonial>
   
         {/* <div id="team" className="py-8">
           <h2 className="text-xl font-semibold">Team</h2>

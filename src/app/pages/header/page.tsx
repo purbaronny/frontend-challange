@@ -56,7 +56,7 @@ export default function Header() {
 
           {/* Menu Navigasi */}
           <nav className="flex items-center space-x-6">
-            {["Home", "Work", "Service", "Our Customer", "Team", "Career", "Contact"].map((item) => (
+            {["Home", "Work", "Service", "Our Customer", "Team", "Testimonial", "Career", "Contact"].map((item) => (
               <a key={item} 
                  href={`#${item.toLowerCase().replace(/\s+/g, "_")}`} 
                  className="text-gray-700 hover:text-blue-500 font-poppins font-medium text-[14px] leading-[16px]">
@@ -104,7 +104,7 @@ export default function Header() {
       {isOpen && (
         <div className="md:hidden bg-white p-4 mt-2 shadow-lg rounded-lg">
           <nav className="flex flex-col space-y-2">
-            {["Home", "Work", "Service", "Our Customer", "Team", "Career", "Contact"].map((item) => (
+            {["Home", "Work", "Service", "Our Customer", "Team", "Testimonial", "Career", "Contact"].map((item) => (
               <a key={item} 
                  href={`#${item.toLowerCase().replace(/\s+/g, "_")}`} 
                  className="block text-gray-700 hover:text-blue-500 font-poppins font-medium text-[14px] leading-[16px]">
