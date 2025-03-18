@@ -68,7 +68,7 @@ export default function Header() {
           {/* Menu Navigasi */}
           <nav className="flex items-center space-x-6">
             {loading && <span>Loading...</span>}
-            {error && <span className="text-red-500">{error}</span>}
+            {error && <span className="text-red-700 font-semibold bg-gray-100 p-1 rounded">{error}</span>}
             {!loading &&
               !error &&
               menus
