@@ -1,6 +1,6 @@
 export default function BodyCareer() {
     return (
-        <div id="career" className="grid grid-cols-12">
+        <div id="career" className="grid grid-cols-12 mt-20">
             {/* Kolom putih di kiri */}
             <div className="hidden lg:block lg:col-span-1"></div>
 

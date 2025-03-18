@@ -1,0 +1,204 @@
+{
+    "menus": [
+        {
+            "id": 1,
+            "title": "Home",
+            "href": "#home",
+            "visible": true
+        },
+        {
+            "id": 2,
+            "title": "Work",
+            "href": "#work",
+            "visible": true
+        },
+        {
+            "id": 3,
+            "title": "Service",
+            "href": "#service",
+            "visible": true
+        },
+        {
+            "id": 4,
+            "title": "Our Customer",
+            "href": "#our_customer",
+            "visible": true
+        },
+        {
+            "id": 5,
+            "title": "Team",
+            "href": "#team",
+            "visible": true
+        },
+        {
+            "id": 6,
+            "title": "Testimonial",
+            "href": "#testimonial",
+            "visible": true
+        },
+        {
+            "id": 7,
+            "title": "Career",
+            "href": "#career",
+            "visible": true
+        },
+        {
+            "id": 8,
+            "title": "Contact",
+            "href": "#contact",
+            "visible": true
+        }
+    ],
+    "boxes": [
+        {
+            "id": null,
+            "title": null,
+            "detail": null
+        },
+        {
+            "id": 1,
+            "title": "Discuss",
+            "detail": "Let's discuss what projects you have in mind"
+        },
+        {
+            "id": 2,
+            "title": "Planning",
+            "detail": "Let's plan what projects you have in mind"
+        },
+        {
+            "id": 3,
+            "title": "Coding",
+            "detail": "Let's code what projects you have in mind"
+        }
+    ],
+    "services": [
+        {
+            "code": "mobile_app",
+            "title": "Mobile Application",
+            "description": "Building mobile applications is never easy. P2P lending app? Logistic App? E-Commerce App? We have done them all. Done them all well. Done them all fast. Our core strength is supercharging your mobile applications idea so that you can focus on the core business. Leave the keyboard-clacking to us."
+        },
+        {
+            "code": "web_app",
+            "title": "Web Application",
+            "description": "From simple landing pages to complex web platforms, we build scalable and reliable web applications. Whether it's a SaaS product, an admin dashboard, or an enterprise solution, we've got the expertise to make it happen."
+        },
+        {
+            "code": "ui_ux",
+            "title": "UI/UX Design",
+            "description": "A great product starts with a great user experience. Our team specializes in designing intuitive, engaging, and visually stunning interfaces that enhance user interaction and satisfaction."
+        }
+    ],
+    "images": [
+        {
+            "id": 1,
+            "url": "/assets/img/image31.png"
+        },
+        {
+            "id": 2,
+            "url": "/assets/img/image32.png"
+        },
+        {
+            "id": 3,
+            "url": "/assets/img/image33.png"
+        },
+        {
+            "id": 4,
+            "url": "/assets/img/image34.png"
+        },
+        {
+            "id": 5,
+            "url": "/assets/img/image35.png"
+        },
+        {
+            "id": 6,
+            "url": "/assets/img/image36.png"
+        },
+        {
+            "id": 7,
+            "url": "/assets/img/image37.png"
+        },
+        {
+            "id": 8,
+            "url": "/assets/img/image38.png"
+        },
+        {
+            "id": 9,
+            "url": "/assets/img/image39.png"
+        }
+    ],
+    "testimonials": [
+        {
+            "quote": "Working with this team was a game-changer for our startup. Their expertise helped us scale efficiently and launch ahead of schedule!",
+            "name": "Ayush Raj",
+            "position": "VP of Marketing @ Webflow",
+            "img": "/assets/img/testi1.png"
+        },
+        {
+            "quote": "Their commitment to excellence is truly remarkable. The results speak for themselves!",
+            "name": "Alex Cattoni",
+            "position": "Founder @ CopyPossy",
+            "img": "/assets/img/testi2.png"
+        },
+        {
+            "quote": "The support and dedication we received were beyond our expectations. A truly amazing team to work with!",
+            "name": "John Doe",
+            "position": "CEO @ StartupX",
+            "img": "/assets/img/testi1.png"
+        },
+        {
+            "quote": "An incredible experience from start to finish. Their professionalism and skills exceeded our hopes!",
+            "name": "Jane Smith",
+            "position": "CTO @ TechWorld",
+            "img": "/assets/img/testi2.png"
+        },
+        {
+            "quote": "A truly remarkable journey. Their expertise and support have made a huge impact on our business!",
+            "name": "Michael Brown",
+            "position": "Product Manager @ InnovateX",
+            "img": "/assets/img/testi1.png"
+        },
+        {
+            "quote": "They exceeded all our expectations. Our collaboration with them was phenomenal!",
+            "name": "Sarah Williams",
+            "position": "Head of Operations @ Growthly",
+            "img": "/assets/img/testi2.png"
+        }
+    ],
+    "teamMembers": [
+        {
+            "name": "Elisabeth Be",
+            "role": "COO",
+            "img": "/assets/img/image11.png"
+        },
+        {
+            "name": "Andree Wijaya",
+            "role": "CEO/CTO",
+            "img": "/assets/img/image10.png"
+        },
+        {
+            "name": "Sanjaya Wahono",
+            "role": "CFO",
+            "img": "/assets/img/image12.png"
+        },
+        {
+            "name": "Mariska",
+            "role": "Head of Wellbeing & Recruitment",
+            "img": "/assets/img/image13.png"
+        }
+    ],
+    "mapLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.004345593481!2d112.7115502!3d-7.2793774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fc088fcf92f1%3A0xf6bf8b906b7e02b2!2sPt%20Dapur%20Rumah%20Sejahtera!5e0!3m2!1sen!2sid!4v1710432912345",
+    "contacts": [
+        {
+            "img": "/assets/img/facebook.png",
+            "name": "Facebook"
+        },
+        {
+            "img": "/assets/img/instagram.png",
+            "name": "Instagram"
+        },
+        {
+            "img": "/assets/img/mail.png",
+            "name": "andree@twiscode.com"
+        }
+    ]
+}

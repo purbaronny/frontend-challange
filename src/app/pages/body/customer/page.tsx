@@ -1,15 +1,9 @@
+"use client";
+
+import useImages from "@/app/hooks/userImages";
+
 export default function BodyOurCustomer() {
-    const images = [
-        "/assets/img/image31.png",
-        "/assets/img/image32.png",
-        "/assets/img/image33.png",
-        "/assets/img/image34.png",
-        "/assets/img/image35.png",
-        "/assets/img/image36.png",
-        "/assets/img/image37.png",
-        "/assets/img/image38.png",
-        "/assets/img/image39.png"
-    ];
+    const { images, loading, error } = useImages();
 
     return (
         <div id="our_customer" className="container mx-auto px-4 grid grid-cols-12 gap-8 mt-20">
@@ -30,9 +24,20 @@ export default function BodyOurCustomer() {
 
             {/* Bagian Kanan (6 kolom dari 12, margin kiri 4 kolom, margin kanan 1 kolom) */}
             <div id="customerRightId" className="col-span-12 md:col-span-6 md:ml-4 md:mr-1 grid grid-cols-3 gap-4 justify-items-center">
-                {images.map((src, index) => (
-                    <img key={index} src={src} alt={`Customer ${index + 1}`} className="w-[120px]" />
-                ))}
+                {loading ? (
+                    <p className="col-span-3 text-center text-gray-500">Loading images...</p>
+                ) : error ? (
+                    <p className="col-span-3 text-center text-red-500">Error: {error}</p>
+                ) : (
+                    images.map((image) => (
+                        <img 
+                            key={image.id} 
+                            src={image.url || undefined} 
+                            alt={`Customer ${image.id}`} 
+                            className="w-[120px]" 
+                        />
+                    ))
+                )}
             </div>
         </div>
     );
