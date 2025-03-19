@@ -22,9 +22,11 @@ export default function BodyContactMediaComponent() {
                             src={contact.img}
                             width={20}
                             height={20}
-                            alt={contact.name}
+                            alt=""
+                            aria-hidden="true"
                             className="w-5 h-5"
                         />
+
                         {contact.name}
                     </li>
                 ))}
