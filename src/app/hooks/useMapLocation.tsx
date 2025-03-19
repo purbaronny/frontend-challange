@@ -3,15 +3,18 @@
 import { useState, useEffect } from "react";
 import { getMapLocation } from "../lib/profile";
 
+interface MapLocation {
+    location: string;
+}
+
 export default function useMapLocation() {
-    const [mapLocation, setMapLocation] = useState("");
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [mapLocation, setMapLocation] = useState<MapLocation | null>(null);
+    const [loading, setLoading] = useState<boolean>(true);
+    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         async function fetchMapLocation() {
             try {
-                setLoading(true);
                 const data = await getMapLocation();
                 setMapLocation(data);
             } catch (err) {
