@@ -1,4 +1,5 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
+// const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
+const API_URL = "https://json-server-vercel-ecru.vercel.app/api"
 
 async function fetchData(endpoint: string) {
     const res = await fetch(`${API_URL}/${endpoint}`);
