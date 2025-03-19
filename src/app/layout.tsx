@@ -25,7 +25,6 @@ export const metadata: Metadata = {
   creator: "Twiscode",
   publisher: "Twiscode",
   referrer: "origin-when-cross-origin", // atau "no-referrer"
-  themeColor: "#ffffff", // Warna tema browser di mobile
   
   // 📷 Open Graph (untuk Facebook, LinkedIn, WhatsApp, dll.)
   openGraph: {
