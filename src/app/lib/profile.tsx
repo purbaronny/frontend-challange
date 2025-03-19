@@ -1,39 +1,47 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
-
-async function fetchData(endpoint: string) {
-    const res = await fetch(`${API_URL}/${endpoint}`);
-    if (!res.ok) throw new Error(`Failed to fetch ${endpoint}`);
-    return res.json();
-}
-
 export async function getMenus() {
-    return fetchData("menus");
+  const res = await fetch("https://json-server-vercel-ecru.vercel.app/api/menus");
+  if (!res.ok) throw new Error("Failed to fetch menus");
+  return res.json();
 }
 
 export async function getBoxes() {
-    return fetchData("boxes");
+  const res = await fetch("https://json-server-vercel-ecru.vercel.app/api/boxes");
+  if (!res.ok) throw new Error("Failed to fetch boxes");
+  return res.json();
 }
 
 export async function getServices() {
-    return fetchData("services");
+  const res = await fetch("https://json-server-vercel-ecru.vercel.app/api/services");
+  if (!res.ok) throw new Error("Failed to fetch services");
+  return res.json();
 }
 
 export async function getImages() {
-    return fetchData("images");
+  const res = await fetch("https://json-server-vercel-ecru.vercel.app/api/images");
+  if (!res.ok) throw new Error("Failed to fetch images");
+  return res.json();
 }
 
 export async function getTestimonials() {
-    return fetchData("testimonials");
+  const res = await fetch("https://json-server-vercel-ecru.vercel.app/api/testimonials");
+  if (!res.ok) throw new Error("Failed to fetch testimonials");
+  return res.json();
 }
 
 export async function getTeamMembers() {
-    return fetchData("teamMembers");
+  const res = await fetch("https://json-server-vercel-ecru.vercel.app/api/teamMembers");
+  if (!res.ok) throw new Error("Failed to fetch teamMembers");
+  return res.json();
 }
 
 export async function getMapLocation() {
-    return fetchData("mapLocation");
+  const res = await fetch("https://json-server-vercel-ecru.vercel.app/api/mapLocation");
+  if (!res.ok) throw new Error("Failed to fetch mapLocation");
+  return res.json();
 }
 
 export async function getContacts() {
-    return fetchData("contacts");
+  const res = await fetch("https://json-server-vercel-ecru.vercel.app/api/contacts");
+  if (!res.ok) throw new Error("Failed to fetch contacts");
+  return res.json();
 }
